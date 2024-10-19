@@ -1,5 +1,11 @@
-str=input("Enter str")
-str1=str.split()
-reverse_word=str1[::-1]
-reverse_sentence=" ".join(reverse_word)
-print(reverse_sentence)
+def fibonacci_iterative(n):
+    fib_sequence = []
+    a, b = 0, 1
+    for _ in range(n):
+        fib_sequence.append(a)
+        a, b = b, a + b
+    return fib_sequence
+
+
+n = 10
+print(fibonacci_iterative(n))
