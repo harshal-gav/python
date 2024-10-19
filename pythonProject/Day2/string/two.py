@@ -1,0 +1,5 @@
+str=input("Enter string")
+print(str)
+fromn=int(input("Enter from"))
+ton=int(input("Enter to"))
+print(str[fromn:ton])

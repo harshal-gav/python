@@ -1,0 +1,21 @@
+# read from a URL and create html file
+
+import requests
+
+from bs4 import BeautifulSoup
+
+page=requests.get("https://www.rediff.com/news/report/three-killed-as-helicopter-crashes-in-pune/20241002.htm")
+
+
+soup=BeautifulSoup(page.text,'html.parser')
+
+filename="c:\\temp\\My.html"
+
+print(page.text)
+
+with open(filename,"w") as f:
+    f.write(page.text)
+
+print("Done")
+
+

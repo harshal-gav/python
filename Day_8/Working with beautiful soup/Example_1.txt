@@ -1,0 +1,6 @@
+import requests
+
+URL = "https://cricket.rediff.com/commentary/2023/oct/29/liveupdates.htm"
+page = requests.get(URL)
+
+print(page.text)

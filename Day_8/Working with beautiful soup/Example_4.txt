@@ -1,0 +1,34 @@
+# find out how many images and hyperlinks are there in a given URL
+
+import requests
+
+from bs4 import BeautifulSoup
+
+page = requests.get("https://www.rediff.com/movies")
+
+soup = BeautifulSoup(page.text, 'html.parser')
+
+images = soup.find_all("img")
+print("No. of images are   ", images.__len__())
+print("\n")
+print("images are")
+for i in images:
+    print(i)
+
+
+anchors = soup.find_all("a")
+print("No. of anchors are  ", anchors.__len__())
+print("\n")
+print("anchors are")
+for i in anchors:
+    print(i)
+
+print("Done")
+
+
+
+"""
+
+go to the browser and type
+
+

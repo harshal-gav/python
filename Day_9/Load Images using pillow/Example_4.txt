@@ -1,0 +1,9 @@
+# Cropping an image
+
+from PIL import Image
+
+img=Image.open("Ghost.jpg")
+area=(180,40,560,210)
+img.crop(area).show()
+
+print("Done")

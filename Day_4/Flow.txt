@@ -1,0 +1,18 @@
+namespaces in python
+
+module , package and library
+
+format function
+
+help function
+
+docstrings
+
+Lambda
+
+OOPS in Python
+
+
+
+
+

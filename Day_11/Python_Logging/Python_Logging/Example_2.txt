@@ -1,0 +1,7 @@
+import logging
+
+# Set up logging to a file
+logging.basicConfig(filename='first.log', level=logging.DEBUG)
+
+logging.debug('Debug message written to file')
+logging.info('Info message written to file')
